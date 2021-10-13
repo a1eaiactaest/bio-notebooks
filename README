@@ -1,0 +1,20 @@
+biology is fun, let's learn something
+
+
+
+## Translation notes
+
+
+RNA -> agucaccgucau -> agtcaccgtcat (DNA)
+
+RNA -> amino acids
+
+
+agu cac cgu cau
+
+S    H   R   H  
+
+my code is wrong here. when 'cccc' in muted genome it should be coverted to 'cc' not 'c'!
+
+
+
