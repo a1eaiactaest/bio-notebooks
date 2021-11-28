@@ -5,7 +5,7 @@
 
 It is a process used for creation of ammonia. It takes gases: N<sub>2</sub> (nitrogen) and H<sub>2</sub> (hydrogen) and creates NH<sub>3</sub> (ammonia).
 
-The heat this reaction producess is (Δ**H**<sub>rxn</sub> = −91.8 kJ/mol)<sup>[1](#### 1)</sup>. Which means it is exothermic.
+The heat this reaction producess is (Δ*H*<sub>rxn</sub> = −91.8 kJ/mol). Which means it is exothermic.
 
 
 
@@ -14,7 +14,6 @@ The heat this reaction producess is (Δ**H**<sub>rxn</sub> = −91.8 kJ/mol)<sup
 
 
 ### Notes
-#### 1
 
 >
 > rxn = denotes that this change is the enthalpy of reaction
