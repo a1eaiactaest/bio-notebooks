@@ -7,10 +7,34 @@ It is a process used for creation of ammonia. It takes gases: N<sub>2</sub> (nit
 
 The heat this reaction producess is (Δ*H*<sub>rxn</sub> = −91.8 kJ/mol). Which means it is exothermic, because value is negative.
 
+### How to calculate equilibrium constant (K) given temperature (T) and pressure (p)?
 
+First calculate delta H which is enthalpy:
+```python
+delta_H  = lambda T: (405000/T)-55.169*T + 0.024928*(T**2)-6.587*(10**(-7))*(T**3)-78988.22
+```
 
+delta S, entropy:
+```python
+delta_S = lambda T: -55.169*(math.log(T)) + 0.049856*T + 202500/T**2 - 9.88*10**(-7) * T**2 + 99.185
+```
 
+Then Gibbs free energy using delta H and delta S:
+```python
+delta_G =  lambda T: delta_H(T) - T * delta_S(T)
+```
 
+Next step is to calculate equilibrium constant itself.   
+Known is that `ln(K) = -(delta_G(T)/RT)` for *R* = `8.3143`:.   
+Now to calculate `K` having natural logarithm of it.  
+Well, natural log has a base of *e*, which is `2.718281...`: 
+Hence `K` is:
+
+```python3
+R = 8.314 # Gas constant
+ln_K = delta_G(T)/(-R*T)
+K  = math.e**ln_K
+```
 
 
 ### Notes
